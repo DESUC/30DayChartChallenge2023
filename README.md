@@ -137,6 +137,17 @@ Si quieres ver cuál es la serie mejor evaluada por año, lo puedes ver en el si
 ![Día 13 - Series por año](output/day13_pop_culture1.png)
 
 
+### Día 16: Familia 
+
+Para el tema de "familia" se utilizaron datos de la Encuesta CASEN (1990-2010) para ver los cambios en las jefaturas de hogar por género. 
+
+- Código disponible [aquí](/R/16-family.R)
+
+Autoría Josefa Guerra.
+
+![Día 16](output/day_16_family_3.png)
+
+
 ### Día 17: Networks
 
 El análisis de redes nos permite, a grandes rasgos, identificar las relaciones sociales entre individuos. Para el día de hoy nos centramos en John Coltrane, un destacado músico de jazz. El gráfico refleja los cuarenta músicos con quienes más colaboró a lo largo de su carrera musical (además de las relaciones entre los mismos). Destaca su colaboración con Miles Davis, Thelonious Monk y sus iniciones musicales con Dizzy Gillespie.
