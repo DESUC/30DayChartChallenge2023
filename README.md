@@ -145,7 +145,7 @@ Para el tema de "familia" se utilizaron datos de la Encuesta CASEN (1990-2010) p
 
 Autoría Josefa Guerra.
 
-![Día 16](output/day_16_family.png)
+![Día 16](output/day16_family.png)
 
 
 ### Día 17: Networks
