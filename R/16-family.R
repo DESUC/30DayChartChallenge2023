@@ -90,7 +90,7 @@ svymean(~sexo, casensvy) %>%
 # join df
 
 casen_df2 <- rbind(df_1990, df_2000, df_2011, df_2017) %>% 
-  mutate(label=paste0(prop_diff,"%"),
+  mutate(label=round(prop_diff,0),
          Hombre=Hombre/100,
          Mujer=Mujer/100,
          prop_diff=prop_diff/100)
@@ -102,7 +102,7 @@ theme_desuc <- list(theme_minimal(base_family = 'Impact'),
                     theme(text = element_text(size = 30),
                           plot.title.position = 'plot',
                           legend.position = 'none',
-                          plot.caption = element_text(color = "#636363", size = rel(0.5)),
+                          plot.caption = element_text(color = "#636363", size = rel(0.3), family = "Helvetica"),
                           plot.title = element_text(color = "#F07167", face = "bold",size = rel(1.5)),
                           plot.subtitle = element_text(color="#F49690", size = rel(1.0), margin = margin(b = 20)),
                           panel.grid.major.x = element_line(color = "gray", linetype = "dashed"),
@@ -112,10 +112,12 @@ theme_desuc <- list(theme_minimal(base_family = 'Impact'),
                           axis.text.x = element_text(size = rel(.7)),
                           plot.background = element_rect(fill = '#FFFAF2', color = NA)))
 
+
+
 #grafico
 
-  casen_df2 %>% 
-  ggplot(aes(x = as.character(año), y = prop_diff)) +
+casen_df2 %>% 
+  ggplot(aes(x = año, y = prop_diff)) +
   geom_segment(aes(x = as.character(año), y = Mujer, xend = as.character(año), yend = Hombre),linewidth=1.5, color= '#00AFB9')+
   geom_emoji(aes(x = as.character(año), y = Mujer), emoji = "1f469") +
   geom_emoji(aes(x = as.character(año), y = Hombre), emoji = "1f466")+
@@ -123,10 +125,38 @@ theme_desuc <- list(theme_minimal(base_family = 'Impact'),
             size =5, fontface = "bold", color = "#0081A7", vjust = -0.5, family = 'Impact')+
   coord_flip()+
   scale_y_continuous(labels = scales::percent_format())+
-  labs(title = "Diferencia en jefatura\nde hogares en Chile, 1990-2017",
+  labs(title = "Diferencia* en jefatura\nde hogares en Chile, 1990-2017",
        subtitle = "Proporción de jefes de familia por género",
-       caption = "CASEN (1990-2017)",
+       caption = "\n*La diferencia se muestra en puntos porcentuales\nCASEN (1990-2017)",
        x = "", y = "Porcentaje (%)") + theme_desuc
+
+
+casen_df2 %>%
+  ggplot(aes(x = año, y = prop_diff)) +
+  geom_segment(aes(x = as.numeric(año), y = Mujer, xend = as.numeric(año), yend = Hombre), 
+               linewidth=1.5, color= '#00AFB9')+
+  geom_emoji(aes(x = año, y = Mujer), emoji = "1f469") +
+  geom_emoji(aes(x = año, y = Hombre), emoji = "1f466")+
+  geom_text(aes(x = año, y = (Mujer + Hombre) / 2, label = label), 
+            size =5, fontface = "bold", color = "#0081A7", vjust = -0.5, family = 'Impact')+
+  coord_flip()+
+  scale_x_continuous( breaks = unique(as.numeric(casen_df2$año))) +
+  scale_y_continuous(labels = scales::percent_format())+
+  labs(title = "Diferencia* en jefatura\nde hogares en Chile, 1990-2017",
+       subtitle = "Proporción de jefes de familia por género",
+       caption = "\n*La diferencia se muestra en puntos porcentuales\nCASEN (1990-2017)",
+       x = "", y = "Porcentaje (%)")+ theme_desuc ->plot
+
+
+gg_save_desuc(plot, 
+              width = 28,
+              height = 25,
+              'day16_family.png')
+
+gg_save_desuc(plot, 
+              width = 50,
+              height = 25,
+              'day16_family_2.png')
 
 
 
