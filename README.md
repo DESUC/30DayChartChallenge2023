@@ -136,6 +136,15 @@ Si quieres ver cuál es la serie mejor evaluada por año, lo puedes ver en el si
 
 ![Día 13 - Series por año](output/day13_pop_culture1.png)
 
+### Día 15: Positivo/Negativo
+
+Para el tema de este día se utilizó una base de datos de Goodreads, una red social usada para compartir información, gustos y listas de los libros que tienes en mente. En este caso, se ocuparon sólo las primeras 25 observaciones con el objetivo de ver cómo se distribuye las estrellas (positivas, negativas, ni lo uno ni lo otro) en este conjunto de libros.
+
+- Código disponible [aquí](/R/15-positive_negative.R)
+
+Autoría de Soledad Araya.
+
+![Día 15](output/day15_positive-negative.png)
 
 ### Día 16: Familia 
 
