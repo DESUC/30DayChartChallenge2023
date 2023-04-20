@@ -166,3 +166,16 @@ El análisis de redes nos permite, a grandes rasgos, identificar las relaciones 
 Autoría Jonatan Salazar.
 
 ![Día 17](output/day17_networks.png)
+
+
+
+
+### Día 20: Correlation
+
+Para el día hoy tenemos correlaciones, las cuales nos permiten establecer relaciones entre variables. En este caso observamos la relación entre el Indice de Desarrollo Humano y el PIB percápita de los países Sudamericanos. El gráfico logra reflejar cierta correlación directamente proporcional entre las variables (r Pearson = 0.77).
+
+- Código disponible [aquí](/R/20-correlation.R)
+
+Autoría Jonatan Salazar.
+
+![Día 20](output/day20_correlation.png)
