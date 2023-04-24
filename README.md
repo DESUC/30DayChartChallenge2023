@@ -167,7 +167,15 @@ Autoría Jonatan Salazar.
 
 ![Día 17](output/day17_networks.png)
 
+### Día 18: Data Day "EuroStat"
 
+El gráfico de hoy se realizaba a partir de la premisa de "relationships", considerando los datos de EuroStat. 
+
+- Código disponible [aquí](/R/18-eurostat.R)
+
+Autoría Cristina Marchant.
+
+![Día 18](output/day18_eurostat_1.png)
 
 
 ### Día 20: Correlation
