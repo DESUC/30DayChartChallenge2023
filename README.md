@@ -187,3 +187,14 @@ Para el día hoy tenemos correlaciones, las cuales nos permiten establecer relac
 Autoría Jonatan Salazar.
 
 ![Día 20](output/day20_correlation.png)
+
+
+### Día 23: Tiles
+
+Esperando que se confirme (o no) la visita de Taylor Swift a Chile, les traemos un gráfico que muestra el número de canciones que estaba dentro del Hot 100 de Billboard según la fecha que busquemos. Por ejemplo, en noviembre del 2022 se lanzó *Midnights*, su último album, y casi todas sus canciones lograron entrar a la lista de los más escuchados ¿cual crees que es el lanzamiento de noviembre de 2021 que logró que tantas canciones se posicionaran dentro del Hot 100? Y más importante, ¿crees que Taylor vendrá a Chile? ¿O es momento de sacar los pasajes a Argentina?
+
+- Código disponible [aquí](/R/23-tiles.R)
+
+Autoría de Soledad Araya.
+
+![Día 23](output/day23_tiles.png)
