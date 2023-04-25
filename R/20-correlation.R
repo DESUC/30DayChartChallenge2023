@@ -107,7 +107,7 @@ gg <- df %>%
        subtitle = 'Países Sudamericanos',
        x = 'PIB percápita',
        y = 'Indice de Desarrollo Humano',
-       caption = 'Funte: PNUD, 2021',
+       caption = 'Fuente: PNUD, 2021',
        color = NULL) +
   theme(plot.margin = margin(t = 1, r = 1, b = 1, l = 1, unit = "cm"),
         panel.background = element_rect(fill = "#FFEBD7", color = NA),
