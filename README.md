@@ -198,3 +198,15 @@ Esperando que se confirme (o no) la visita de Taylor Swift a Chile, les traemos 
 Autoría de Soledad Araya.
 
 ![Día 23](output/day23_tiles.png)
+
+### Día 25: Global Change
+
+Para este día correspondía abordar el tema de "global change". Alex Leyton, nuestro invitado y ex integrante del equipo DESUC, actual profesional en el Ministerio de Desarrollo Social y la Familia, nos trae un gráfico que aborda la cantidad de material particulado durante el invierno comparando comunas de El Bosque y Las Condes.
+
+- Código disponible [aquí](/R/25-global_change.R)
+
+Autoría de Alex Leyton.
+
+![Día 25](output/day25_global_change.gif)
+
+
